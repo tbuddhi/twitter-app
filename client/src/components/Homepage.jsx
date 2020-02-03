@@ -77,12 +77,18 @@ export default class HomePage extends Component {
               <div className="container">
                 <Row>
                   <Col className="text-center">       
-                    <div><img className="width-20" src={this.state.user.profileImageUrl} /></div>           
-                    <h3 className="mt-3 font-weight-bold">{this.state.user.name}</h3>
+                    <div className="d-flex d-sm-block">
+                      <img className="width-20" src={this.state.user.profileImageUrl} />
+                      <h3 className="ml-3 mt-3 font-weight-bold d-sm-none text-left">{this.state.user.name} <br/>
+                      <span className="text-muted">@{this.state.user.screenName}</span>
+                      </h3>
+                      
+                    </div>           
+                    <h3 className="mt-3 font-weight-bold d-none d-sm-block">{this.state.user.name}</h3>
                     <div>
                       <Row className="tweet-post-area">
                         <Col md={2}>
-                          <img className="border-r-50" src={this.state.user.profileImageUrl} />
+                          <img className="border-r-50 d-none d-md-block" src={this.state.user.profileImageUrl} />
                         </Col>
                         <Col>
                           <textarea placeholder="What's happening?"  className="w-100 post-box"></textarea>

@@ -4,10 +4,6 @@
 
 This is a simple web authentication web application via Twitter OAuth.
 
-### Demo
-
-![Demo](https://xenodochial-goodall-9f74ff.netlify.com/)
-
 ---
 
 ### Server
@@ -31,3 +27,6 @@ npm start
 
 Go to localhost:3000
 
+### Target platform
+
+- Chrome Browser

@@ -1,4 +1,4 @@
-# Authenticate Twitter via passport
+# Authenticate with Twitter OAuth
 
 ### About
 
@@ -31,6 +31,3 @@ npm start
 
 Go to localhost:3000
 
-### Instructions
-
-- 
